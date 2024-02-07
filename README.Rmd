@@ -1,0 +1,36 @@
+---
+title: "README"
+output: html_document
+---
+
+# advR package
+
+This package offers robust functionality for importing NetCDF files and generating IDF models based on user-defined parameters. The package provides both graphical and numerical representations of the IDF models, allowing for comprehensive analysis and visualization.
+
+## Installation
+
+You can install the package from GitHub with:
+
+```{r eval = FALSE}
+#install.packages("devtools")
+devtools::install_github("xbutt/advR")
+
+```
+
+## Usage
+
+```{r eval = FALSE}
+library(advR)
+```
+
+Example usage:
+```{r}
+sample_data <- process_nc(directory = "./data", pattern = ".nc", cell_ids = c(327, 328, 329))
+result <- idf(sample_data)
+print(result$data)
+print(result$plot)
+```
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

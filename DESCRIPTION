@@ -1,0 +1,12 @@
+Package: advR
+Type: Package
+Title: IDF modelling
+Version: 0.1.0
+Author: Tatyana Butova
+Maintainer: Tatyana <xbutt001@studenti.czu.cz>
+Description: this R package imports *.nc files and calculates multiple IDF models
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: data.table, CoSMoS, ggplot2, ncdf4, ncdf4.helpers, terra
+LazyData: true
+RoxygenNote: 7.2.3
